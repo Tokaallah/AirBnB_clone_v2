@@ -6,6 +6,12 @@ This repository contains the initial stage of a student project to build a clone
 
 ---
 
+mysql -u root -p
+CREATE USER 'hbnb_dev'@'localhost' IDENTIFIED BY 'hbnb_dev_pwd';
+GRANT ALL PRIVILEGES ON *.* TO 'hbnb_dev'@'localhost';
+
+HBNB_ENV=dev HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db ./console.py
+
 <center><h3>Repository Contents by Project Task</h3> </center>
 
 | Tasks | Files | Description |
